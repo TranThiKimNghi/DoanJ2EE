@@ -1,0 +1,59 @@
+HELP.md
+
+### Build output ###
+target/
+build/
+
+# Allow target/build inside source folders
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### Maven ###
+.mvn/wrapper/maven-wrapper.jar
+.mvn/
+
+### Logs ###
+*.log
+
+### Environment / Secrets ###
+# Ignore Spring Boot configs in all services
+**/src/main/resources/application.yml
+**/src/main/resources/application.yaml
+**/src/main/resources/application-*.yml
+**/src/main/resources/application-*.yaml
+**/docker-compose.yml
+# Ignore environment files
+**/.env
+**/*.env
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse / STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+ /nbbuild/
+ /dist/
+ /nbdist/
+ /.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### OS ###
+.DS_Store
+Thumbs.db
+
